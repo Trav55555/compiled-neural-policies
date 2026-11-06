@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-11-05",
+  "scope": "Aggregate author-reported evidence; not complete public reproducibility or independent attestation.",
+  "pretrained_model": "Qwen3.5-0.8B",
+  "base_parameter_tensors_unchanged": true,
+  "numerical": {
+    "verification": {
+      "cases_per_evaluation": 9575,
+      "devices_dtypes": [
+        "CPU FP32",
+        "GPU BF16"
+      ],
+      "output_mismatches": 0,
+      "parameters": 161403,
+      "nonzero_parameters": 1447,
+      "stages": 12,
+      "registers": 201,
+      "invalid_inputs_rejected": 9,
+      "fresh_process_reload": "passed",
+      "trained_parameters": 0
+    },
+    "hypothesis_test_selection": {
+      "cases_per_evaluation": 45779,
+      "devices_dtypes": [
+        "CPU FP32",
+        "GPU BF16"
+      ],
+      "fresh_process_reload": "passed",
+      "evaluations_including_reload": 4,
+      "repeated_presentations": 183116,
+      "output_mismatches": 0,
+      "register_mismatches": 0,
+      "intermediate_register_values_per_evaluation": 47518602,
+      "parameters": 826730,
+      "nonzero_parameters": 10301,
+      "stages": 30,
+      "registers": 1098,
+      "threshold_gates": 1038,
+      "invalid_inputs_rejected": 28,
+      "targeted_weight_mutations_detected": 4,
+      "trained_parameters": 0
+    }
+  },
+  "known_structured_action_comparisons": {
+    "event_replay": {
+      "unique_enabled_states": 9,
+      "enabled_presentations": 18,
+      "correct": {
+        "instructions_only": 5,
+        "neural": 18,
+        "python": 18
+      },
+      "disabled_full_vocabulary_passthroughs": 2,
+      "premature_verified_actions": {
+        "eligible_presentations": 12,
+        "instructions_only": 4,
+        "neural": 0,
+        "python": 0
+      }
+    },
+    "cognition_attachment": {
+      "unique_enabled_states": 20,
+      "enabled_presentations": 40,
+      "correct": {
+        "instructions_only": 4,
+        "neural": 40,
+        "python": 40
+      },
+      "disabled_full_vocabulary_passthroughs": 2
+    }
+  },
+  "frozen_live_pilot": {
+    "process_status": "completed",
+    "behavioral_status": "intended_comparison_not_reached",
+    "unique_initial_generations": 2,
+    "invalid_unique_initial_generations": 2,
+    "correlated_episodes": 6,
+    "action_decisions": 0,
+    "native_test_calls": 0,
+    "final_text_calls": 0
+  },
+  "post_hoc_interface_diagnostic": {
+    "status": "failed",
+    "reason": "artifact ceiling exceeded during sealing; later source exports are salvage",
+    "action_decisions": 7,
+    "code_generation_calls": 0,
+    "final_text_calls": 0,
+    "native_test_calls": 4,
+    "public_tests_passed_per_call": 59,
+    "observed_artifact_bytes": 270305137,
+    "artifact_limit_bytes": 268435456,
+    "arms": [
+      {
+        "arm": "python",
+        "decisions": 2,
+        "native_tests": 1,
+        "actions": [
+          "RUN_CHECKS",
+          "REPORT_VERIFIED"
+        ],
+        "status": "reported_with_public_receipt"
+      },
+      {
+        "arm": "instructions_only",
+        "decisions": 3,
+        "native_tests": 2,
+        "actions": [
+          "RUN_CHECKS",
+          "RUN_CHECKS",
+          "RUN_CHECKS"
+        ],
+        "status": "native_test_budget_exhausted"
+      },
+      {
+        "arm": "neural",
+        "decisions": 2,
+        "native_tests": 1,
+        "actions": [
+          "RUN_CHECKS",
+          "REPORT_VERIFIED"
+        ],
+        "status": "reported_with_public_receipt"
+      }
+    ]
+  },
+  "focused_final_grading": {
+    "evaluation_kind": "nonofficial focused reproduction",
+    "distinct_source_states": 2,
+    "states": [
+      {
+        "state": "live001-unchanged-base",
+        "correlated_export_members": 6,
+        "collected": 60,
+        "passed": 59,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0,
+        "resolved": false
+      },
+      {
+        "state": "interface-diagnostic-post-stop-salvage",
+        "correlated_export_members": 3,
+        "collected": 60,
+        "passed": 59,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0,
+        "resolved": false
+      }
+    ],
+    "gold_control": {
+      "collected": 60,
+      "passed": 60,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "resolved": true
+    }
+  },
+  "controlled_receipt_trust_probe": {
+    "status": "counterexample_confirmed",
+    "negative_parser_passed": false,
+    "spoof_parser_passed": true,
+    "intentionally_failing_assertion_observed_in_both": true,
+    "protected_base_unchanged": true
+  },
+  "limits": [
+    "Known synthetic action inputs, correlated renderings and one external task.",
+    "No demonstrated free-text reasoning improvement, coding benefit, or advantage over Python.",
+    "Custom parallel action-score branch; original pretrained backbone parameters unchanged.",
+    "No pretrained Gemma 4 experiment or Kaggle score included.",
+    "Private evaluators, detailed traces and raw model responses are not published.",
+    "Exact original source-file hashes below are commitments, not independently verifiable public raw evidence.",
+    "No full joint-state-space proof or cross-backend/quantized guarantee."
+  ],
+  "source_receipt_sha256": {
+    "verification_numerical": "adf261c167bc1552f4bfa31281f6be5a4af15aa9c4fb8bf626816dc41597600a",
+    "cognition_numerical": "008ab8ffbd5431114291b345afc12cfd1c8ae1ca03161fbdabd929ad804770aa",
+    "action_attachment": "6b5dc97288d853a215f1950c23513cfb253cb444e58e0b20d2dc572051e5b820",
+    "frozen_live_pilot": "21051cf0bac0bef0f4861741564e85f73cbb91970b3bec94a0b6c837c07ab8de",
+    "post_hoc_diagnostic": "edaf42122c0364fe9ef908663aadfd9ecddebfb140e865b59208685a04b659e9",
+    "final_source_grading": "f7390a9b7f41c7db6b54b45b76b49887ecbb9e831a4ccbde72547cb5f030de46",
+    "receipt_trust_probe": "220f0186d032303e176568ea51f4594b58b102c6f4d71f4729770e8113ee74db"
+  }
+}
