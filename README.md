@@ -2,7 +2,7 @@
 id: compiled-neural-policies-project
 tags: [technical-report, neural-policies, evidence-handling]
 type: project
-status: publication-approved
+status: published
 created: 2026-11-05
 ---
 
@@ -51,7 +51,7 @@ or analytics. Browser printing uses its print stylesheet.
 
 ## Publication status
 
-Report site: <https://trav55555.github.io/compiled-neural-policies/>.
+Published report: <https://trav55555.github.io/compiled-neural-policies/>.
 
 The selected Kaggle destination is the **Developer Agent Competition**, not the
 Paper Track. The report is a separate technical artifact, not a competition
