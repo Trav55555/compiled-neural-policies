@@ -2,7 +2,7 @@
 id: compiled-neural-policies-project
 tags: [technical-report, neural-policies, evidence-handling]
 type: project
-status: prepared-not-published
+status: publication-approved
 created: 2026-11-05
 ---
 
@@ -51,11 +51,13 @@ or analytics. Browser printing uses its print stylesheet.
 
 ## Publication status
 
-**Prepared locally, not published.** The requested Kaggle destination is
-ambiguous between its Developer Agent Competition and separate Paper Track.
-The latter requires unpublished research while permitting public PDF links;
-GitHub Pages sequencing needs clarification before deployment. No Kaggle
-submission or new rule/license acceptance has occurred.
+Report site: <https://trav55555.github.io/compiled-neural-policies/>.
+
+The selected Kaggle destination is the **Developer Agent Competition**, not the
+Paper Track. The report is a separate technical artifact, not a competition
+score or a claim that the custom action head runs in the official harness.
+Competition packaging and validation are tracked separately. No new account,
+rule or model-license acceptance is performed by this report build.
 
 A private architecture-only smoke used a tiny randomly initialized Gemma 4 model.
 It is not a pretrained Gemma result, a coding improvement, or evidence that a
